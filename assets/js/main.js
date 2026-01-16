@@ -30,7 +30,7 @@
     
 
         try {
-            const response = await fetch(`http://www.omdbapi.com/?s=${get_user_input}&apikey=b25a9959`);
+            const response = await fetch(`https://www.omdbapi.com/?s=${get_user_input}&apikey=b25a9959`);
             const data = await response.json();
 
             if (data.Response === "False") {
